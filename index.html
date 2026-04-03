@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet-A-Cure | Luxury Pet Studio</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;0,6..96,700;1,6..96,400&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <div class="pulse-logo">
+            <h1 class="font-serif">Pet-A-Cure</h1>
+            <p class="font-sans" data-i18n="slogan">El amor es una palabra de cuatro patitas</p>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <a href="#" class="logo-link">
+            <!-- Reemplaza estas URLs en script.js con las rutas a tu logo en PNG -->
+            <img id="brand-logo" src="images/black.png" alt="Pet-A-Cure Logo" class="brand-logo">
+        </a>
+        <div class="controls">
+            <button id="lang-toggle" class="font-sans">EN</button>
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+            <button id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Full Screen Menu -->
+    <nav id="full-menu" class="glass-menu">
+        <ul class="font-serif">
+            <li><a href="#hero" data-i18n="menu_home">Inicio</a></li>
+            <li><a href="#about" data-i18n="menu_about">Nosotros</a></li>
+            <li><a href="#services" data-i18n="menu_services">Servicios</a></li>
+            <li><a href="#gallery" data-i18n="menu_gallery">Galería</a></li>
+            <li><a href="#contact" data-i18n="menu_contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-carousel">
+            <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=1920&q=80')"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=1920&q=80')"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=1920&q=80')"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="font-serif" data-i18n="hero_title">Elegancia para tu mejor amigo</h1>
+            <p class="font-sans" data-i18n="hero_subtitle">Experiencias de spa y cuidado de ultra-lujo.</p>
+            <button class="cta-btn font-sans" data-i18n="hero_cta">Reserva una Cita</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2 class="font-serif" data-i18n="about_title">Nuestra Filosofía</h2>
+                <p class="font-sans" data-i18n="about_desc">En Pet-A-Cure, creemos que cada mascota es una obra de arte y un miembro invaluable de la familia. Nuestro santuario fue creado con un solo propósito: devolverles un poco del amor incondicional que nos regalan a diario. Combinamos técnicas de estilismo de vanguardia con un trato compasivo y paciente, asegurando que cada visita sea una experiencia de relajación y lujo absoluto.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=600&q=80')">
+                    <span class="stat-number font-serif" data-target="5000">0</span><span class="stat-plus font-serif">+</span>
+                    <span class="stat-label font-sans" data-i18n="stat_clients">Clientes Satisfechos</span>
+                </div>
+                <div class="stat-item" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=600&q=80')">
+                    <span class="stat-number font-serif" data-target="12">0</span><span class="stat-plus font-serif">+</span>
+                    <span class="stat-label font-sans" data-i18n="stat_experience">Años de Experiencia</span>
+                </div>
+                <div class="stat-item" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?auto=format&fit=crop&w=600&q=80')">
+                    <span class="stat-number font-serif" data-target="10000">0</span><span class="stat-plus font-serif">+</span>
+                    <span class="stat-label font-sans" data-i18n="stat_sessions">Sesiones de Spa</span>
+                </div>
+                <div class="stat-item" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1541599540903-2a6a15d0b471?auto=format&fit=crop&w=600&q=80')">
+                    <span class="stat-number font-serif" data-target="15">0</span>
+                    <span class="stat-label font-sans" data-i18n="stat_awards">Premios de Estilismo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2 class="section-title font-serif" data-i18n="services_title">Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-card blob-1" data-category="cachorros">
+                <div class="card-content">
+                    <h3 class="font-serif" data-i18n="cat_puppies">Cachorros</h3>
+                    <span class="discover font-sans" data-i18n="discover">Descubrir</span>
+                </div>
+            </div>
+            <div class="service-card blob-2" data-category="perros">
+                <div class="card-content">
+                    <h3 class="font-serif" data-i18n="cat_dogs">Perros</h3>
+                    <span class="discover font-sans" data-i18n="discover">Descubrir</span>
+                </div>
+            </div>
+            <div class="service-card blob-3" data-category="gatos">
+                <div class="card-content">
+                    <h3 class="font-serif" data-i18n="cat_cats">Gatos</h3>
+                    <span class="discover font-sans" data-i18n="discover">Descubrir</span>
+                </div>
+            </div>
+            <div class="service-card blob-4" data-category="adicionales">
+                <div class="card-content">
+                    <h3 class="font-serif" data-i18n="cat_extras">Adicionales</h3>
+                    <span class="discover font-sans" data-i18n="discover">Descubrir</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2 class="section-title font-serif" data-i18n="gallery_title">Galería</h2>
+        <div class="gallery-carousel">
+            <div class="gallery-item aspect-square"><img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=600&q=80" alt="Dog" referrerpolicy="no-referrer"></div>
+            <div class="gallery-item aspect-tall"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80" alt="Cat" referrerpolicy="no-referrer"></div>
+            <div class="gallery-item aspect-wide"><img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=80" alt="Dogs playing" referrerpolicy="no-referrer"></div>
+            <div class="gallery-item aspect-square"><img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=600&q=80" alt="Cat" referrerpolicy="no-referrer"></div>
+            <div class="gallery-item aspect-tall"><img src="https://images.unsplash.com/photo-1537151608804-ea2f14cb1f3f?auto=format&fit=crop&w=600&q=80" alt="Dog" referrerpolicy="no-referrer"></div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2 class="section-title font-serif" data-i18n="test_title">Experiencia Pet-A-Cure</h2>
+        <div class="testimonials-carousel">
+            <div class="test-card">
+                <div class="test-img" style="background-image: url('https://images.unsplash.com/photo-1537151608804-ea2f14cb1f3f?auto=format&fit=crop&w=400&q=80')"></div>
+                <div class="test-content">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="font-sans" data-i18n="test_1_text">"El mejor trato que ha recibido mi perrita. Salió luciendo hermosa y súper relajada."</p>
+                    <h4 class="font-serif" data-i18n="test_1_author">Sofía & Luna</h4>
+                </div>
+            </div>
+            <div class="test-card">
+                <div class="test-img" style="background-image: url('https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=400&q=80')"></div>
+                <div class="test-content">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="font-sans" data-i18n="test_2_text">"Instalaciones de primer nivel. Se nota el amor y la paciencia que tienen con los gatos."</p>
+                    <h4 class="font-serif" data-i18n="test_2_author">Carlos & Milo</h4>
+                </div>
+            </div>
+            <div class="test-card">
+                <div class="test-img" style="background-image: url('https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=400&q=80')"></div>
+                <div class="test-content">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="font-sans" data-i18n="test_3_text">"Un verdadero spa de lujo. Los productos que usan dejaron el pelaje de mi Golden increíble."</p>
+                    <h4 class="font-serif" data-i18n="test_3_author">Elena & Max</h4>
+                </div>
+            </div>
+            <div class="test-card">
+                <div class="test-img" style="background-image: url('https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=400&q=80')"></div>
+                <div class="test-content">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="font-sans" data-i18n="test_4_text">"Atención impecable desde que cruzas la puerta. Mi cachorro ya no le teme al baño."</p>
+                    <h4 class="font-serif" data-i18n="test_4_author">Roberto & Rocky</h4>
+                </div>
+            </div>
+            <div class="test-card">
+                <div class="test-img" style="background-image: url('https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=400&q=80')"></div>
+                <div class="test-content">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="font-sans" data-i18n="test_5_text">"Vale cada centavo. Es una experiencia premium que nuestras mascotas merecen."</p>
+                    <h4 class="font-serif" data-i18n="test_5_author">Ana & Bella</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2 class="font-serif" data-i18n="contact_title">Visítanos</h2>
+                <p class="font-sans">Polanco, CDMX</p>
+                <p class="font-sans">hello@petacure.com</p>
+                <p class="font-sans">+52 55 1234 5678</p>
+            </div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15050.554095400277!2d-99.2065384!3d19.4326077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2020173a110a1%3A0x6a21f650228399e!2sPolanco%2C%20Mexico%20City%2C%20CDMX%2C%20Mexico!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img id="footer-brand-logo" src="images/black.png" alt="Pet-A-Cure Logo" class="brand-logo">
+            </div>
+            <div class="footer-links font-sans">
+                <a href="#hero" data-i18n="menu_home">Inicio</a>
+                <a href="#about" data-i18n="menu_about">Nosotros</a>
+                <a href="#services" data-i18n="menu_services">Servicios</a>
+                <a href="#gallery" data-i18n="menu_gallery">Galería</a>
+                <a href="#contact" data-i18n="menu_contact">Contacto</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom font-sans">
+            <p>&copy; 2026 Pet-A-Cure. <span data-i18n="footer_rights">Todos los derechos reservados.</span></p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/525512345678" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Modal -->
+    <div id="service-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <h2 class="modal-title font-serif"></h2>
+            <div class="modal-grid">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
+
